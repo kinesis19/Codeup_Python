@@ -6,10 +6,15 @@ int main(void){
     scanf("%d", &n1);
 
     for(int i = 0; i < n1; i++){
-        for(int j = 0; j < n1-i-1; j++){
+        int j = 0;
+        for(j = 0; j < n1-i-1; j++){
             printf(" ");
         }
-        printf("*");
+        for(int k = 0; k < n1-j; k++){
+            printf("*");
+        }
+        
+        printf("\n");
     }
     return 0;
 }
