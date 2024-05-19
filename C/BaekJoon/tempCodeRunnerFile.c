@@ -1,1 +1,1 @@
-result = result % 10;
+return 0;
