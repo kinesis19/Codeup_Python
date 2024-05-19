@@ -1,8 +1,13 @@
-N = int(input())
-numberList = list(map(int, input().split()))
-v = int(input())
-cnt = 0
-for x in range(N):
-    if numberList[x] == v:
-        cnt = cnt + 1
-print(cnt)
+
+def get_prime(n):
+    cnt = 0
+    for x in range(n):
+        if n % x == 0:
+            cnt = cnt + 1
+        
+    if cnt == 3:
+        return True
+    else:
+        return False
+    
+print(get_prime(17))
